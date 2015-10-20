@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.GtfsTest.ConsoleApp", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.GtfsTest.CsvParser.ConsoleApp", "Demo.GtfsTest.CsvParser.ConsoleApp\Demo.GtfsTest.CsvParser.ConsoleApp.csproj", "{2F6E6CA4-1C76-445F-9C15-D4C9D38AFAC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.GtfsTest.Lib", "Demo.GtfsTest.Lib\Demo.GtfsTest.Lib.csproj", "{4162A733-8561-4763-AE1D-2FABAABC0858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.GtfsTest.Lib.Test", "Demo.GtfsTest.Lib.Test\Demo.GtfsTest.Lib.Test.csproj", "{DE785B15-E1ED-4599-BAF2-D4297ED1EAF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{2F6E6CA4-1C76-445F-9C15-D4C9D38AFAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F6E6CA4-1C76-445F-9C15-D4C9D38AFAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F6E6CA4-1C76-445F-9C15-D4C9D38AFAC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4162A733-8561-4763-AE1D-2FABAABC0858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4162A733-8561-4763-AE1D-2FABAABC0858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4162A733-8561-4763-AE1D-2FABAABC0858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4162A733-8561-4763-AE1D-2FABAABC0858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE785B15-E1ED-4599-BAF2-D4297ED1EAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE785B15-E1ED-4599-BAF2-D4297ED1EAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE785B15-E1ED-4599-BAF2-D4297ED1EAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE785B15-E1ED-4599-BAF2-D4297ED1EAF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
