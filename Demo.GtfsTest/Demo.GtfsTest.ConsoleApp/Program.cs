@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using GTFS;
+using GTFS.IO;
 
 namespace Demo.GtfsTest.ConsoleApp
 {
@@ -10,6 +9,22 @@ namespace Demo.GtfsTest.ConsoleApp
 	{
 		public static void Main(string[] args)
 		{
+			RunExample();
+		}
+
+		private static void RunExample()
+		{
+			// create the reader.
+			var reader = new GTFSReader<GTFSFeed>(strict:false);
+
+			// execute the reader.
+			GTFSFeed feed = reader.Read(new GTFSDirectorySource(new DirectoryInfo("feeds/lirr")));
+			Console.WriteLine(feed);
+
+			feed = reader.Read(new GTFSDirectorySource(new DirectoryInfo("feeds/subway")));
+			Console.WriteLine(feed);
+
+			Console.Read();
 		}
 	}
 }
