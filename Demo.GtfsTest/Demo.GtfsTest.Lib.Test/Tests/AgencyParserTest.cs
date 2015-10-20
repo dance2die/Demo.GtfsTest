@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Demo.GtfsTest.Lib.Core;
@@ -16,6 +17,14 @@ namespace Demo.GtfsTest.Lib.Test.Tests
 		public AgencyParserTest(ITestOutputHelper output)
 		{
 			_output = output;
+		}
+
+		[Fact]
+		public void EnsureThatParsingOnNullTextReaderThrowsException()
+		{
+			var sut = new AgencyParser();
+
+			Assert.ThrowsAny<ArgumentNullException>(() => sut.Parse(null));
 		}
 
 		[Fact]
